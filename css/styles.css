@@ -1,27 +1,20 @@
 body {
-<<<<<<< HEAD
   background-color: cornsilk;
   font-family: monospace;
-=======
   padding-top: 5rem;
   background: url(https://i.annihil.us/u/prod/marvel/choosemarvelquiz/images/site_bg.jpg) #000;
 }
 .starter-template {
   padding: 3rem 1.5rem;
->>>>>>> fb7fffd4688141d55b968eb050b87b2494af4720
   text-align: center;
 }
 
 h1 {
-<<<<<<< HEAD
   color: tomato;
 }
 
 h2 {
-  color: orange;
-=======
   color: blue;
->>>>>>> fb7fffd4688141d55b968eb050b87b2494af4720
 }
 
 p {
