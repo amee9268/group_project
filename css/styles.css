@@ -1,0 +1,56 @@
+element.style {
+}
+body, div, h4, h5 {
+    color: #FFF;
+}
+body {
+    background: url(https://i.annihil.us/u/prod/marvel/choosemarvelquiz/images/site_bg.jpg) #000;
+}
+body {
+    background: #fff;
+    color: #222;
+    cursor: auto;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+html, body {
+    font-size: 100%;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #fff;
+    margin: 40px;
+    font: 13px/20px normal Helvetica, Arial, sans-serif;
+    color: #333;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
