@@ -1,59 +1,96 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Contact</title>
+  <title>Contact</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="contact/contact_styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-default" role="navigation" id="nav_bar"></nav>
-    <center></center>
+  <link href="contact/contact_styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-default" role="navigation" id="nav_bar"></nav>
+  <center></center>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Menu</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about_page.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact_page.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_page.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact_page.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <main role="main" class="container">
+  <main role="main" class="container">
 
-      <div class="starter-template">
-        <h1>Contact</h1>
-        <p class="lead">Ameenah Zainab - ameenah.zainab@gmail.com <br> Mei Ying Tan - miniminion4833@gmail.com <br> Damilola Oladapo - damilola.oladapo.02@gmail.com</p>
-      </div>
-    </main>
+    <div class="starter-template">
+      <h1>Contact</h1>
+      <p class="lead">Ameenah Zainab - ameenah.zainab@gmail.com <br> Mei Ying Tan - miniminion4833@gmail.com <br> Damilola Oladapo - damilola.oladapo.02@gmail.com</p>
+    </div>
+  </main>
 
-    <!-- /.container -->
+  <h2> Contact Us </h2>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
-    <script src="js/jquery.min.js.js"></script>
-  </body>
+  <div class="container">
+    <form action="action_page.php">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="albania">Albania</option>
+        <option value="brazil">Brazil</option>
+        <option value="canada">Canada</option>
+        <option value="china">China</option>
+        <option value="france">France</option>
+        <option value="italy">Italy</option>
+        <option value="japan">Japan</option>
+        <option value="mexico">Mexico</option>
+        <option value="norway">Norway</option>
+        <option value="south korea">South Korea</option>
+        <option value="spain">Spain</option>
+        <option value="switzerland">Switzerland</option>
+        <option value="uk">UK</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+
+  <!-- /.container -->
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+  <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js.js"></script>
+</body>
 </html>

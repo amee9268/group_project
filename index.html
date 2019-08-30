@@ -1,49 +1,91 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Marvel Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
 
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-default" role="navigation" id="nav_bar"></nav>
-    <center></center>
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Menu</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  .button:hover span {
+    padding-right: 25px;
+  }
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about_page.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact_page.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+</style>
 
-    <main role="main" class="container">
+<title>Marvel Quiz</title>
 
-      <div class="starter-template">
-        <h1>How well do you know your Marvel characters?</h1>
-      </div>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-      <!-- Slideshow container -->
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-default" role="navigation" id="nav_bar"></nav>
+  <center></center>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_page.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact_page.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+
+    <div class="starter-template">
+      <h1>How well do you know your Marvel characters?</h1>
+    </div>
+
+    <!-- Slideshow container -->
     <div class="slideshow-container">
 
       <!-- Full-width images with number and caption text -->
@@ -113,136 +155,10 @@
 
     </main>
 
-<<<<<<< HEAD
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
+      <button class="button"><span> Advance to quiz </span></button>
 
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 8</div>
-        <img src="avengers.jpg" style="width:100%">
-        <div class="text">The Avengers</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 8</div>
-        <img src="iron_man.jpg" style="width:100%">
-        <div class="text">Iron Man</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 8</div>
-        <img src="captain_america.jpg" style="width:90%">
-        <div class="text">Captain America</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 8</div>
-        <img src="thor.jpg" style="width:100%">
-        <div class="text">Thor</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 8</div>
-        <img src="hulk.jpg" style="width:100%">
-        <div class="text">Hulk</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">6 / 8</div>
-        <img src="black_widow.jpg" style="width:80%">
-        <div class="text">Black Widow</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">7 / 8</div>
-        <img src="hawkeye.jpg" style="width:90%">
-        <div class="text">Hawkeye</div>
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
-      <span class="dot" onclick="currentSlide(7)"></span>
-      <span class="dot" onclick="currentSlide(8)"></span>
-    </div>
-
-    <audio controls autoplay>
-      <source src="avengers_music.mp3" type="audio/mpeg">
-      </audio>
-
-    <div class="one">
-    <p> 1. Which trait do you most value in people you admire? </p>
-    <ol>
-    </div>
-
-    <br>
-
-    <div class="two">
-    <p> 2. You find Zen when you are... </p>
-    </div>
-
-    <br>
-
-    <div class="three">
-    <p> 3. When problems arise, how do you battle them? </p>
-    </div>
-
-    <br>
-
-    <div class="four">
-    <p> 4. What's your favourite sporting event? </p>
-    </div>
-
-    <br>
-
-    <div class="five">
-    <p> 5. You perform best when you feel... </p>
-    </div>
-
-    <br>
-
-    <div class="six">
-    <p> 6. If you could shapeshift into any animal, which would it be? </p>
-    </div>
-
-    <br>
-
-    <div class="seven">
-    <p> 7. Which word describes you best? </p>
-    </div>
-
-    <br>
-
-    <div class="eight">
-    <p> 8. What type of music best suits your personality? </p>
-    </div>
-
-    <br>
-
-    <div class="nine">
-    <p> 9. What's your greatest strength? </p>
-    </div>
-
-    <br>
-
-    <div class="ten">
-    <p> 10. Which of the following lairs appeals most to you? </p>
-    </div>
-
-=======
->>>>>>> 096399618ce5b2eb547da640614dff4ce906c7c9
+    =======
+    >>>>>>> 096399618ce5b2eb547da640614dff4ce906c7c9
     <!-- /.container -->
 
     <!-- Bootstrap core JavaScript
@@ -254,4 +170,4 @@
     <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js.js"></script>
   </body>
-</html>
+  </html>
