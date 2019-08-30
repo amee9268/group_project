@@ -11,8 +11,10 @@ body {
 
 h1 {
   color: tomato;
+  font-family: monospace;
 }
 
-p {
+P {
   color: white;
+  font-family: monospace;
 }
